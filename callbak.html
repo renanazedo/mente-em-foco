@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><title>Autorização TikTok</title></head>
+<body style="font-family: sans-serif; padding: 20px;">
+    <h1>Autorização Concluída!</h1>
+    <p>Copie o código abaixo e cole no seu script Python:</p>
+    <textarea id="code" rows="4" style="width: 100%; font-size: 16px;" readonly></textarea>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const code = urlParams.get('code');
+        document.getElementById('code').value = code || "Nenhum código encontrado na URL.";
+    </script>
+</body>
+</html>
